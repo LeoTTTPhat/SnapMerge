@@ -1,0 +1,19 @@
+{
+  "caveat": "Generated locally with DuckDB's tpch extension (dbgen port). Not a TPC-H benchmark result; must not be compared with published TPC-H results (TPC fair use policy, https://www.tpc.org/tpc_documents_current_versions/pdf/tpc_fair_use_quick_reference_v1.0.0.pdf).",
+  "duckdb_version": "v1.5.6",
+  "files": {
+    "lineitem": {
+      "bytes": 1726751146,
+      "path": "data/tpch/sf10/lineitem.parquet",
+      "rows": 59986052,
+      "sha256": "026c280a6d4c4afd405e68117e7cce1d15a7716a80f5de93e18eac0bffc4e6bc"
+    }
+  },
+  "generator": "scripts/prepare_tpch.py",
+  "license": "TPC EULA / fair use; locally generated, not redistributed",
+  "retrieved": "2026-10-02",
+  "scale_factor": 10.0,
+  "source": "TPC-H (DuckDB tpch extension, dbgen)",
+  "tpch_extension_version": "v1.5.6",
+  "url": "https://duckdb.org/docs/stable/core_extensions/tpch"
+}
