@@ -46,7 +46,7 @@ An expected failure records the current limitation on merging branches again aft
 
 ## Recompute the reference analysis
 
-The reference records are distributed as one compressed archive per campaign in `reference/`. The setup command `python scripts/unpack_reference.py` verifies their checksums and expands them into `results/<campaign>/raw/`, together with campaign settings, environment records, and runner summaries. Input datasets are prepared locally using their recorded provenance:
+The reference records are distributed as compressed archives for all 23 campaigns in `reference/`. The setup command `python scripts/unpack_reference.py` verifies their checksums and expands them into `results/<campaign>/raw/`, together with campaign settings, environment records, and runner summaries. Input datasets are prepared locally using their recorded provenance:
 
 ```bash
 python scripts/prepare_tpch.py --sf 0.1 1 10 --tables lineitem
