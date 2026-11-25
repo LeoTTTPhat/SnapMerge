@@ -1,0 +1,493 @@
+{
+ "chain": "rereview_ALL",
+ "invocations": [
+  {
+   "invocation": "rereview_ALL_inv1",
+   "started_utc": "2026-10-07T13:54:25Z",
+   "status": "stopped",
+   "tree_limit_gb": 48.0,
+   "host_used_limit_gb": 490.0,
+   "lock_wait_seconds": 0.0,
+   "attempts": [
+    {
+     "attempt": 0,
+     "batch_scale": 1.0,
+     "returncode": -15,
+     "stop_reason": "project_rss_limit",
+     "peak_tree_rss_gb": 48.3,
+     "peak_host_used_gb": 272.7
+    },
+    {
+     "attempt": 1,
+     "batch_scale": 0.5,
+     "returncode": -15,
+     "stop_reason": "interrupted",
+     "peak_tree_rss_gb": 24.1,
+     "peak_host_used_gb": 253.7
+    }
+   ],
+   "steps": [
+    {
+     "time": "2026-10-07 20:54:25",
+     "event": "start",
+     "step": "tests",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 20:55:45",
+     "event": "end",
+     "step": "tests",
+     "detail": "rc=1"
+    },
+    {
+     "time": "2026-10-07 20:55:45",
+     "event": "start",
+     "step": "main_tpch",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 21:10:13",
+     "event": "end",
+     "step": "main_tpch",
+     "detail": "rc=1"
+    },
+    {
+     "time": "2026-10-07 21:10:13",
+     "event": "start",
+     "step": "writer_single",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 21:21:50",
+     "event": "end",
+     "step": "writer_single",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 21:21:50",
+     "event": "start",
+     "step": "physical_enum",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 21:23:39",
+     "event": "end",
+     "step": "physical_enum",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 21:23:39",
+     "event": "start",
+     "step": "workflow",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 21:24:31",
+     "event": "end",
+     "step": "workflow",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 21:24:31",
+     "event": "start",
+     "step": "counterexamples",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 21:27:18",
+     "event": "end",
+     "step": "counterexamples",
+     "detail": "rc=0"
+    },
+    {
+     "time": "2026-10-07 21:27:18",
+     "event": "start",
+     "step": "sens_parts8",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 21:31:28",
+     "event": "end",
+     "step": "sens_parts8",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 21:31:28",
+     "event": "start",
+     "step": "sens_parts16",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 21:36:43",
+     "event": "end",
+     "step": "sens_parts16",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 21:36:43",
+     "event": "start",
+     "step": "sens_parts32",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 21:44:29",
+     "event": "end",
+     "step": "sens_parts32",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 21:44:29",
+     "event": "start",
+     "step": "sens_hist2",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 21:49:01",
+     "event": "end",
+     "step": "sens_hist2",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 21:49:01",
+     "event": "start",
+     "step": "sens_hist4",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 21:56:05",
+     "event": "end",
+     "step": "sens_hist4",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 21:56:05",
+     "event": "start",
+     "step": "sens_sel025",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 21:59:24",
+     "event": "end",
+     "step": "sens_sel025",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 21:59:24",
+     "event": "start",
+     "step": "sens_sel4",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 22:02:39",
+     "event": "end",
+     "step": "sens_sel4",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 22:02:39",
+     "event": "start",
+     "step": "sens_compact05",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 22:05:58",
+     "event": "end",
+     "step": "sens_compact05",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 22:05:58",
+     "event": "start",
+     "step": "sens_compact1",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 22:09:18",
+     "event": "end",
+     "step": "sens_compact1",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 22:09:18",
+     "event": "start",
+     "step": "ablation",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 22:22:41",
+     "event": "end",
+     "step": "ablation",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 22:22:41",
+     "event": "start",
+     "step": "fallback",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 22:31:16",
+     "event": "end",
+     "step": "fallback",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 22:31:16",
+     "event": "start",
+     "step": "mixed_metadata",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 22:36:49",
+     "event": "end",
+     "step": "mixed_metadata",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-07 22:36:49",
+     "event": "start",
+     "step": "scale",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 23:28:58",
+     "event": "start",
+     "step": "tests",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-07 23:30:18",
+     "event": "end",
+     "step": "tests",
+     "detail": "rc=1"
+    },
+    {
+     "time": "2026-10-07 23:30:18",
+     "event": "start",
+     "step": "main_tpch",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 00:05:16",
+     "event": "end",
+     "step": "main_tpch",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 00:05:16",
+     "event": "start",
+     "step": "scale",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 00:19:38",
+     "event": "end",
+     "step": "scale",
+     "detail": "rc=1"
+    },
+    {
+     "time": "2026-10-08 00:19:38",
+     "event": "start",
+     "step": "contended",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 00:24:49",
+     "event": "end",
+     "step": "contended",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 00:24:49",
+     "event": "start",
+     "step": "contended_unpart",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 00:26:25",
+     "event": "end",
+     "step": "contended_unpart",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 00:26:25",
+     "event": "start",
+     "step": "history",
+     "detail": ""
+    }
+   ],
+   "interrupted_step": "history"
+  },
+  {
+   "invocation": "rereview_ALL_inv2",
+   "started_utc": "2026-10-07T17:28:21Z",
+   "status": "stopped",
+   "tree_limit_gb": 80.0,
+   "host_used_limit_gb": 490.0,
+   "lock_wait_seconds": 0.0,
+   "attempts": [
+    {
+     "attempt": 0,
+     "batch_scale": 1.0,
+     "returncode": -15,
+     "stop_reason": "host_used_limit",
+     "peak_tree_rss_gb": 44.5,
+     "peak_host_used_gb": 491.5
+    }
+   ],
+   "steps": [
+    {
+     "time": "2026-10-08 00:28:21",
+     "event": "start",
+     "step": "tests",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 00:29:42",
+     "event": "end",
+     "step": "tests",
+     "detail": "rc=0"
+    },
+    {
+     "time": "2026-10-08 00:29:42",
+     "event": "start",
+     "step": "scale",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 01:08:41",
+     "event": "end",
+     "step": "scale",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 01:08:41",
+     "event": "start",
+     "step": "contended",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 01:12:47",
+     "event": "end",
+     "step": "contended",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 01:12:47",
+     "event": "start",
+     "step": "contended_unpart",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 01:14:20",
+     "event": "end",
+     "step": "contended_unpart",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 01:14:20",
+     "event": "start",
+     "step": "history",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 01:18:31",
+     "event": "end",
+     "step": "history",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 01:18:31",
+     "event": "start",
+     "step": "contended_sf10",
+     "detail": ""
+    }
+   ],
+   "interrupted_step": "contended_sf10"
+  },
+  {
+   "invocation": "rereview_ALL_inv3",
+   "started_utc": "2026-10-07T18:30:51Z",
+   "status": "stopped",
+   "tree_limit_gb": 80.0,
+   "host_used_limit_gb": 490.0,
+   "lock_wait_seconds": 0.0,
+   "attempts": [
+    {
+     "attempt": 0,
+     "batch_scale": 1.0,
+     "returncode": -15,
+     "stop_reason": "host_used_limit",
+     "peak_tree_rss_gb": 22.0,
+     "peak_host_used_gb": 492.7
+    }
+   ],
+   "steps": [
+    {
+     "time": "2026-10-08 01:30:51",
+     "event": "start",
+     "step": "contended_sf10",
+     "detail": ""
+    }
+   ],
+   "interrupted_step": "contended_sf10"
+  },
+  {
+   "invocation": "rereview_ALL_inv4",
+   "started_utc": "2026-10-07T18:45:27Z",
+   "status": "stopped",
+   "tree_limit_gb": 80.0,
+   "host_used_limit_gb": 490.0,
+   "lock_wait_seconds": 0.0,
+   "attempts": [],
+   "steps": [],
+   "interrupted_step": null
+  },
+  {
+   "invocation": "rereview_ALL_inv5",
+   "started_utc": "2026-10-07T18:47:09Z",
+   "status": "completed",
+   "tree_limit_gb": 80.0,
+   "host_used_limit_gb": 490.0,
+   "lock_wait_seconds": 0.0,
+   "attempts": [
+    {
+     "attempt": 0,
+     "batch_scale": 1.0,
+     "returncode": 0,
+     "stop_reason": null,
+     "peak_tree_rss_gb": 21.4,
+     "peak_host_used_gb": 470.7
+    }
+   ],
+   "steps": [
+    {
+     "time": "2026-10-08 02:00:42",
+     "event": "start",
+     "step": "main_nyc",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 03:22:23",
+     "event": "end",
+     "step": "main_nyc",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 03:22:23",
+     "event": "start",
+     "step": "contended_sf10",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 03:28:54",
+     "event": "end",
+     "step": "contended_sf10",
+     "detail": "rc=0 pending=0"
+    }
+   ],
+   "interrupted_step": null
+  }
+ ],
+ "policy": "a stop ends the invocation (max-restarts 0); the interrupted run leaves no record and the next invocation repeats it with the same settings"
+}

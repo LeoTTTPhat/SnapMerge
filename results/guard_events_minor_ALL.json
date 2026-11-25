@@ -1,0 +1,315 @@
+{
+ "chain": "minor_ALL",
+ "invocations": [
+  {
+   "invocation": "minor_ALL_inv1",
+   "started_utc": "2026-10-08T07:33:53Z",
+   "status": "completed",
+   "tree_limit_gb": 80.0,
+   "host_used_limit_gb": 490.0,
+   "lock_wait_seconds": 0.0,
+   "attempts": [
+    {
+     "attempt": 0,
+     "batch_scale": 1.0,
+     "returncode": 0,
+     "stop_reason": null,
+     "peak_tree_rss_gb": 32.1,
+     "peak_host_used_gb": 331.7
+    }
+   ],
+   "steps": [
+    {
+     "time": "2026-10-08 14:33:53",
+     "event": "start",
+     "step": "tests",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 14:35:31",
+     "event": "end",
+     "step": "tests",
+     "detail": "rc=0"
+    },
+    {
+     "time": "2026-10-08 14:35:31",
+     "event": "start",
+     "step": "main_tpch",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 15:33:49",
+     "event": "end",
+     "step": "main_tpch",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 15:33:49",
+     "event": "start",
+     "step": "writer_single",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 15:47:56",
+     "event": "end",
+     "step": "writer_single",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 15:47:56",
+     "event": "start",
+     "step": "physical_enum",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 15:51:16",
+     "event": "end",
+     "step": "physical_enum",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 15:51:16",
+     "event": "start",
+     "step": "workflow",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 15:52:43",
+     "event": "end",
+     "step": "workflow",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 15:52:43",
+     "event": "start",
+     "step": "counterexamples",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 15:56:37",
+     "event": "end",
+     "step": "counterexamples",
+     "detail": "rc=0"
+    },
+    {
+     "time": "2026-10-08 15:56:37",
+     "event": "start",
+     "step": "sens_parts8",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 16:01:12",
+     "event": "end",
+     "step": "sens_parts8",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 16:01:12",
+     "event": "start",
+     "step": "sens_parts16",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 16:07:05",
+     "event": "end",
+     "step": "sens_parts16",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 16:07:05",
+     "event": "start",
+     "step": "sens_parts32",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 16:16:46",
+     "event": "end",
+     "step": "sens_parts32",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 16:16:46",
+     "event": "start",
+     "step": "sens_hist2",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 16:22:07",
+     "event": "end",
+     "step": "sens_hist2",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 16:22:07",
+     "event": "start",
+     "step": "sens_hist4",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 16:31:51",
+     "event": "end",
+     "step": "sens_hist4",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 16:31:51",
+     "event": "start",
+     "step": "sens_sel025",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 16:35:29",
+     "event": "end",
+     "step": "sens_sel025",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 16:35:29",
+     "event": "start",
+     "step": "sens_sel4",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 16:38:56",
+     "event": "end",
+     "step": "sens_sel4",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 16:38:56",
+     "event": "start",
+     "step": "sens_compact05",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 16:42:26",
+     "event": "end",
+     "step": "sens_compact05",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 16:42:26",
+     "event": "start",
+     "step": "sens_compact1",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 16:45:53",
+     "event": "end",
+     "step": "sens_compact1",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 16:45:53",
+     "event": "start",
+     "step": "ablation",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 16:59:31",
+     "event": "end",
+     "step": "ablation",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 16:59:31",
+     "event": "start",
+     "step": "fallback",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 17:08:42",
+     "event": "end",
+     "step": "fallback",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 17:08:42",
+     "event": "start",
+     "step": "mixed_metadata",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 17:17:28",
+     "event": "end",
+     "step": "mixed_metadata",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 17:17:28",
+     "event": "start",
+     "step": "scale",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 18:40:42",
+     "event": "end",
+     "step": "scale",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 18:40:42",
+     "event": "start",
+     "step": "contended",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 18:45:33",
+     "event": "end",
+     "step": "contended",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 18:45:33",
+     "event": "start",
+     "step": "contended_unpart",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 18:47:05",
+     "event": "end",
+     "step": "contended_unpart",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 18:47:05",
+     "event": "start",
+     "step": "history",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 18:50:36",
+     "event": "end",
+     "step": "history",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 18:50:36",
+     "event": "start",
+     "step": "main_nyc",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 19:33:59",
+     "event": "end",
+     "step": "main_nyc",
+     "detail": "rc=0 pending=0"
+    },
+    {
+     "time": "2026-10-08 19:33:59",
+     "event": "start",
+     "step": "contended_sf10",
+     "detail": ""
+    },
+    {
+     "time": "2026-10-08 19:49:03",
+     "event": "end",
+     "step": "contended_sf10",
+     "detail": "rc=0 pending=0"
+    }
+   ],
+   "interrupted_step": null
+  }
+ ],
+ "policy": "a stop ends the invocation (max-restarts 0); the interrupted run leaves no record and the next invocation repeats it with the same settings"
+}

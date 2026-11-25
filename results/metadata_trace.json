@@ -1,0 +1,96 @@
+{
+ "statement_1": "UPDATE t SET x = x + 1 WHERE k = 1  (recorded as OVERWRITE(k = 1, {(1,1,1)}), fixed rows)",
+ "split_writer": [
+  {
+   "operation": "overwrite",
+   "adds": [
+    "data file (1 rows)"
+   ],
+   "removes": [
+    "data file (2 rows)"
+   ],
+   "props": {
+    "snapmerge.filter": "{\"cmp\":\"=\",\"col\":\"k\",\"op\":\"cmp\",\"val\":1}",
+    "snapmerge.filter-fields": "{\"k\": 1}",
+    "snapmerge.inserted-records": "1",
+    "snapmerge.key-col": "k",
+    "snapmerge.mode": "cow",
+    "snapmerge.op": "OVERWRITE",
+    "snapmerge.op-end": "false",
+    "snapmerge.op-id": "op1",
+    "snapmerge.part": "delete",
+    "snapmerge.schema-version": "2",
+    "snapmerge.semantics": "fixed-rows"
+   }
+  },
+  {
+   "operation": "append",
+   "adds": [
+    "data file (1 rows)"
+   ],
+   "removes": [],
+   "props": {
+    "snapmerge.filter": "{\"cmp\":\"=\",\"col\":\"k\",\"op\":\"cmp\",\"val\":1}",
+    "snapmerge.filter-fields": "{\"k\": 1}",
+    "snapmerge.inserted-records": "1",
+    "snapmerge.key-col": "k",
+    "snapmerge.mode": "cow",
+    "snapmerge.op": "OVERWRITE",
+    "snapmerge.op-end": "true",
+    "snapmerge.op-id": "op1",
+    "snapmerge.part": "insert",
+    "snapmerge.schema-version": "2",
+    "snapmerge.semantics": "fixed-rows"
+   }
+  }
+ ],
+ "single_snapshot_writer": [
+  {
+   "operation": "overwrite",
+   "adds": [
+    "data file (2 rows)"
+   ],
+   "removes": [
+    "data file (2 rows)"
+   ],
+   "props": {
+    "snapmerge.filter": "{\"cmp\":\"=\",\"col\":\"k\",\"op\":\"cmp\",\"val\":1}",
+    "snapmerge.filter-fields": "{\"k\": 1}",
+    "snapmerge.inserted-records": "1",
+    "snapmerge.key-col": "k",
+    "snapmerge.mode": "cow",
+    "snapmerge.op": "OVERWRITE",
+    "snapmerge.op-end": "true",
+    "snapmerge.op-id": "op1",
+    "snapmerge.part": "mixed",
+    "snapmerge.schema-version": "2",
+    "snapmerge.semantics": "fixed-rows"
+   }
+  }
+ ],
+ "statement_2": "MERGE INTO t USING {(2,7,1),(4,1,2)} ON k  (recorded as UPSERT(K={2,4}, rows), merge-on-read)",
+ "mor_upsert": [
+  {
+   "operation": "overwrite",
+   "adds": [
+    "data file (1 rows)",
+    "data file (1 rows)",
+    "pos file (1 rows)"
+   ],
+   "removes": [],
+   "props": {
+    "snapmerge.filter-fields": "{\"k\": 1}",
+    "snapmerge.inserted-records": "2",
+    "snapmerge.key-col": "k",
+    "snapmerge.keys": "[2, 4]",
+    "snapmerge.mode": "mor",
+    "snapmerge.op": "UPSERT",
+    "snapmerge.op-end": "true",
+    "snapmerge.op-id": "op1",
+    "snapmerge.part": "insert",
+    "snapmerge.schema-version": "2",
+    "snapmerge.semantics": "fixed-rows"
+   }
+  }
+ ]
+}
