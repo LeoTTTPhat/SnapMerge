@@ -1,0 +1,23 @@
+{
+  "clean": {
+    "2023-01": {
+      "dropped_rows": 48,
+      "path": "data/nyc/yellow_tripdata_2023-01.clean.parquet",
+      "raw_rows": 3066766,
+      "rows": 3066718,
+      "sha256": "020d43ffbaa5ccbcf89289347e6692e89f061ea019a1004224422162b0669ea9"
+    }
+  },
+  "cleaning": "scripts/fetch_nyc_tlc.py docstring",
+  "landing_page": "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page",
+  "license": "NYC Open Data terms of use, https://www.nyc.gov/home/terms-of-use.page",
+  "raw": {
+    "2023-01": {
+      "bytes": 47673370,
+      "retrieved": "2026-10-04",
+      "sha256": "32df6f67578fa86c484a6b5ef23a5281992ff085521082340b0f9e5889e9a572",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-01.parquet"
+    }
+  },
+  "source": "NYC TLC Trip Record Data (yellow taxi)"
+}
